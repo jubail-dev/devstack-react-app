@@ -4,7 +4,7 @@ export function Hero() {
     
     return (
         <>
-         <div className="container mx-auto">
+         <div className="container mx-auto h-screen">
 
             <div className="flex flex-col lg:flex-row gap-10 py-10 lg:py-20 justify-between items-center">
                 {/* Left Side Content */}
