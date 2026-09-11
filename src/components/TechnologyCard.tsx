@@ -2,7 +2,7 @@ import { IoIosStar } from "react-icons/io";
 import type { TechnologiesType } from "../types/types";
 import { FaCheck } from "react-icons/fa";
 import { Bounce, toast } from "react-toastify";
-import { useState, type Dispatch, type SetStateAction } from "react";
+import {  type Dispatch, type SetStateAction } from "react";
 
 export interface TechnologyCardProps {
   technology: TechnologiesType;
@@ -12,10 +12,9 @@ export interface TechnologyCardProps {
 
 const TechnologyCard = ({ technology,selected,setSelected}: TechnologyCardProps) => {
 
-  const [isSelected,setIsSelected] = useState(false)
+  const isSelected = selected.some((selectedTechnology) => selectedTechnology.id === technology.id);
 
   const handleUpdateButton = () => {
-    setIsSelected(true);
     setSelected([...selected,technology])
     toast.success(`${technology.name} added to your Stack`, {
       position: "top-center",
