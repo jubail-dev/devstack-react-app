@@ -64,7 +64,7 @@ export function Footer() {
                     <div className="flex flex-col sm:flex-row justify-between items-center gap-4 text-center sm:text-left">
 
                         <div>
-                            <p className="text-[#94A3B8] text-sm md:text-md"> &copy; 2026 Dev Stack. All rights reserved.</p>
+                            <p className="text-[#94A3B8] text-sm md:text-md"> &copy; JR Jubail 2026 Dev Stack. All rights reserved.</p>
                         </div>
 
                         <div>

@@ -5,7 +5,7 @@ export function Nav() {
     
     return (
         <>
-            <nav className="shadow sticky z-50 top-0">
+            <nav className="shadow sticky z-50 top-0 bg-white">
               <div className="container mx-auto py-5">
 
                 <div className="flex justify-between items-center">
