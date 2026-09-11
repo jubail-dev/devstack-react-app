@@ -9,9 +9,9 @@ export function Footer() {
                 <div className="flex flex-col gap-10">
 
 
-                    <div className="flex justify-between">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12">
 
-                       <div className="space-y-4">
+                       <div className="space-y-4 sm:col-span-2 lg:col-span-2">
                         <img src={FooterLogo} alt="footer-logo" />
                         <p className="text-[#64748B] :">Curated tools, technologies, and resources for developers building <br /> modern software.</p>
                         <div>
@@ -61,14 +61,14 @@ export function Footer() {
                      <div className="divider"></div>
 
                         
-                    <div className="flex justify-between ">
+                    <div className="flex flex-col sm:flex-row justify-between items-center gap-4 text-center sm:text-left">
 
                         <div>
-                            <p className="text-[#94A3B8] text-md"> &copy; 2026 Dev Stack. All rights reserved.</p>
+                            <p className="text-[#94A3B8] text-sm md:text-md"> &copy; 2026 Dev Stack. All rights reserved.</p>
                         </div>
 
                         <div>
-                            <ul className="flex gap-2 text-[#94A3B8] text-md">
+                            <ul className="flex gap-4 text-[#94A3B8] text-sm md:text-md ">
                                 <li><a href="#">Privacy</a></li>
                                 <li><a href="#">Terms</a></li>
                             </ul>
