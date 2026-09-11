@@ -19,7 +19,7 @@ function App() {
 
       <Suspense fallback={<div>Loading...</div>}>
 
-          <Technologies promiseTechnologies = {promiseTechnologiesData()}></Technologies>
+          <Technologies promiseTechnologies = {promiseTechnologiesData()} ></Technologies>
 
       </Suspense>
     </>

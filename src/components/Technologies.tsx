@@ -1,6 +1,7 @@
-import { use } from "react";
+import { use, useState } from "react";
 import type { TechnologiesType } from "../types/types";
 import AvailableTechnologies from "./AvailableTechnologies";
+import SelectedTechnologiesCart from "./SelectedTechnologiesCart";
 
 export interface TechnologiesProps {
   promiseTechnologies: Promise<TechnologiesType[]>;
@@ -8,6 +9,9 @@ export interface TechnologiesProps {
 
 const Technologies = ({ promiseTechnologies }: TechnologiesProps) => {
   const Technologies = use(promiseTechnologies);
+  
+  const [selected,setSelected] = useState<TechnologiesType[]>([])
+
 
 
   return (
@@ -31,14 +35,16 @@ const Technologies = ({ promiseTechnologies }: TechnologiesProps) => {
             <div className="grid grid-cols-3 gap-4">
               {Technologies.map(
                 (technology: TechnologiesType, index: number) => (
-                  <AvailableTechnologies technology={technology} key={index} />
+                  <AvailableTechnologies technology={technology} key={index} selected={selected} setSelected ={setSelected} />
                 ),
               )}
             </div>
           </div>
 
           <div className="col-span-3">
-            <div className="w-full border-2 border-gray-300 shadow rounded-3xl">
+            
+            {
+              selected.length === 0 ? <div className="w-full border-2 border-gray-300 shadow rounded-3xl">
               <div className="flex flex-col gap-3 justify-center items-center py-5">
                 <h1 className="text-[#0F172A] font-bold text-3xl">
                   Your Stack
@@ -57,6 +63,12 @@ const Technologies = ({ promiseTechnologies }: TechnologiesProps) => {
                 </div>
               </div>
             </div>
+
+            : <SelectedTechnologiesCart selected={selected} setSelected={setSelected}></SelectedTechnologiesCart>
+
+            }
+
+
           </div>
         </div>
       </div>
