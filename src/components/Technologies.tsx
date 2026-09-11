@@ -30,9 +30,9 @@ const Technologies = ({ promiseTechnologies }: TechnologiesProps) => {
       </div>
 
       <div className="container mx-auto">
-        <div className="grid grid-cols-12 gap-4 items-start">
+        <div className="grid md:grid-cols-12 grid-cols-2 md:gap-4 items-start">
           <div className="col-span-9">
-            <div className="grid grid-cols-3 gap-4">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 md:gap-4 grid-cols-1">
               {Technologies.map(
                 (technology: TechnologiesType, index: number) => (
                   <AvailableTechnologies technology={technology} key={index} selected={selected} setSelected ={setSelected} />
