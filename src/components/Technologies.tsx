@@ -1,6 +1,6 @@
-import { use, useState } from "react";
+import { use } from "react";
 import type { TechnologiesType } from "../types/types";
-import TechnologyCard from "./TechnologyCard";
+import AvailableTechnologies from "./AvailableTechnologies";
 
 export interface TechnologiesProps {
   promiseTechnologies: Promise<TechnologiesType[]>;
@@ -9,7 +9,6 @@ export interface TechnologiesProps {
 const Technologies = ({ promiseTechnologies }: TechnologiesProps) => {
   const Technologies = use(promiseTechnologies);
 
-  const [isSelected,setIsSelected] = useState<boolean>(false)
 
   return (
     <>
@@ -32,7 +31,7 @@ const Technologies = ({ promiseTechnologies }: TechnologiesProps) => {
             <div className="grid grid-cols-3 gap-4">
               {Technologies.map(
                 (technology: TechnologiesType, index: number) => (
-                  <TechnologyCard technology={technology} key={index} isSelected ={isSelected} setIsSelected= {setIsSelected} />
+                  <AvailableTechnologies technology={technology} key={index} />
                 ),
               )}
             </div>
