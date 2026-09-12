@@ -2,20 +2,25 @@ import { IoIosStar } from "react-icons/io";
 import type { TechnologiesType } from "../types/types";
 import { FaCheck } from "react-icons/fa";
 import { Bounce, toast } from "react-toastify";
-import {  type Dispatch, type SetStateAction } from "react";
+import { type Dispatch, type SetStateAction } from "react";
 
 export interface TechnologyCardProps {
   technology: TechnologiesType;
-  selected: TechnologiesType[]
-  setSelected: Dispatch<SetStateAction<TechnologiesType[]>>
+  selected: TechnologiesType[];
+  setSelected: Dispatch<SetStateAction<TechnologiesType[]>>;
 }
 
-const TechnologyCard = ({ technology,selected,setSelected}: TechnologyCardProps) => {
-
-  const isSelected = selected.some((selectedTechnology) => selectedTechnology.id === technology.id);
+const TechnologyCard = ({
+  technology,
+  selected,
+  setSelected,
+}: TechnologyCardProps) => {
+  const isSelected = selected.some(
+    (selectedTechnology) => selectedTechnology.id === technology.id,
+  );
 
   const handleUpdateButton = () => {
-    setSelected([...selected,technology])
+    setSelected([...selected, technology]);
     toast.success(`${technology.name} added to your Stack`, {
       position: "top-center",
       autoClose: 2500,
@@ -40,9 +45,15 @@ const TechnologyCard = ({ technology,selected,setSelected}: TechnologyCardProps)
           />
         </div>
 
-        <span className="rounded-full border border-sky-100 bg-sky-50 px-4 py-2 text-sm font-medium text-sky-500">
-          {technology.badge}
-        </span>
+        {technology.badge ? (
+          <span
+            className={`rounded-full border px-4 py-2 text-sm font-medium ${technology.badge?.bgColor} ${technology.badge?.textColor}`}
+          >
+            {technology.badge?.text}
+          </span>
+        ) : (
+          ""
+        )}
       </div>
 
       <h2 className="mt-7 text-3xl font-bold tracking-tight text-slate-900">

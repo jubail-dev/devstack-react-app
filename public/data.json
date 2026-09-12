@@ -7,7 +7,11 @@
     "icon": "https://icon.icepanel.io/Technology/svg/React.svg",
     "rating": 4.9,
     "difficulty": "Beginner-Friendly",
-    "badge": "Popular"
+    "badge": {
+      "text": "Popular",
+      "textColor": "text-sky-600",
+      "bgColor": "bg-sky-100"
+    }
   },
   {
     "id": "nextjs",
@@ -16,8 +20,7 @@
     "description": "A React framework for building fast, scalable, and production-ready web applications.",
     "icon": "https://icon.icepanel.io/Technology/svg/Next.js.svg",
     "rating": 4.8,
-    "difficulty": "Intermediate",
-    "badge": "Fast"
+    "difficulty": "Intermediate"
   },
   {
     "id": "nodejs",
@@ -27,7 +30,11 @@
     "icon": "https://icon.icepanel.io/Technology/svg/Node.js.svg",
     "rating": 4.8,
     "difficulty": "Intermediate",
-    "badge": "Popular"
+    "badge": {
+      "text": "Popular",
+      "textColor": "text-green-600",
+      "bgColor": "bg-green-100"
+    }
   },
   {
     "id": "express",
@@ -37,7 +44,11 @@
     "icon": "https://icon.icepanel.io/Technology/svg/Express.svg",
     "rating": 4.7,
     "difficulty": "Beginner-Friendly",
-    "badge": "Essential"
+    "badge": {
+      "text": "Essential",
+      "textColor": "text-amber-600",
+      "bgColor": "bg-amber-100"
+    }
   },
   {
     "id": "mongodb",
@@ -47,7 +58,11 @@
     "icon": "https://icon.icepanel.io/Technology/svg/MongoDB.svg",
     "rating": 4.7,
     "difficulty": "Beginner-Friendly",
-    "badge": "Popular"
+    "badge": {
+      "text": "Popular",
+      "textColor": "text-emerald-600",
+      "bgColor": "bg-emerald-100"
+    }
   },
   {
     "id": "postgresql",
@@ -57,7 +72,11 @@
     "icon": "https://icon.icepanel.io/Technology/svg/PostgresSQL.svg",
     "rating": 4.9,
     "difficulty": "Intermediate",
-    "badge": "Top SQL"
+    "badge": {
+      "text": "Top SQL",
+      "textColor": "text-blue-600",
+      "bgColor": "bg-blue-100"
+    }
   },
   {
     "id": "typescript",
@@ -67,7 +86,11 @@
     "icon": "https://icon.icepanel.io/Technology/svg/TypeScript.svg",
     "rating": 4.9,
     "difficulty": "Intermediate",
-    "badge": "Essential"
+    "badge": {
+      "text": "Essential",
+      "textColor": "text-blue-700",
+      "bgColor": "bg-blue-50"
+    }
   },
   {
     "id": "javascript",
@@ -77,7 +100,11 @@
     "icon": "https://icon.icepanel.io/Technology/svg/JavaScript.svg",
     "rating": 4.9,
     "difficulty": "Beginner-Friendly",
-    "badge": "Essential"
+    "badge": {
+      "text": "Essential",
+      "textColor": "text-yellow-700",
+      "bgColor": "bg-yellow-100"
+    }
   },
   {
     "id": "tailwindcss",
@@ -87,7 +114,11 @@
     "icon": "https://icon.icepanel.io/Technology/svg/Tailwind-CSS.svg",
     "rating": 4.8,
     "difficulty": "Beginner-Friendly",
-    "badge": "Fast"
+    "badge": {
+      "text": "Fast",
+      "textColor": "text-teal-600",
+      "bgColor": "bg-teal-100"
+    }
   },
   {
     "id": "bootstrap",
@@ -97,7 +128,11 @@
     "icon": "https://icon.icepanel.io/Technology/svg/Bootstrap.svg",
     "rating": 4.6,
     "difficulty": "Beginner-Friendly",
-    "badge": "Popular"
+    "badge": {
+      "text": "Popular",
+      "textColor": "text-purple-600",
+      "bgColor": "bg-purple-100"
+    }
   },
   {
     "id": "docker",
@@ -107,7 +142,11 @@
     "icon": "https://icon.icepanel.io/Technology/svg/Docker.svg",
     "rating": 4.8,
     "difficulty": "Intermediate",
-    "badge": "Containers"
+    "badge": {
+      "text": "Containers",
+      "textColor": "text-sky-700",
+      "bgColor": "bg-sky-100"
+    }
   },
   {
     "id": "github-actions",
@@ -117,7 +156,11 @@
     "icon": "https://icon.icepanel.io/Technology/svg/GitHub-Actions.svg",
     "rating": 4.7,
     "difficulty": "Intermediate",
-    "badge": "Automation"
+    "badge": {
+      "text": "Automation",
+      "textColor": "text-rose-600",
+      "bgColor": "bg-rose-100"
+    }
   },
   {
     "id": "git",
@@ -127,7 +170,11 @@
     "icon": "https://icon.icepanel.io/Technology/svg/Git.svg",
     "rating": 4.9,
     "difficulty": "Beginner-Friendly",
-    "badge": "Essential"
+    "badge": {
+      "text": "Essential",
+      "textColor": "text-orange-600",
+      "bgColor": "bg-orange-100"
+    }
   },
   {
     "id": "github",
@@ -137,7 +184,11 @@
     "icon": "https://icon.icepanel.io/Technology/svg/GitHub.svg",
     "rating": 4.9,
     "difficulty": "Beginner-Friendly",
-    "badge": "Popular"
+    "badge": {
+      "text": "Popular",
+      "textColor": "text-slate-700",
+      "bgColor": "bg-slate-100"
+    }
   },
   {
     "id": "vite",
@@ -147,6 +198,10 @@
     "icon": "https://icon.icepanel.io/Technology/svg/Vite.js.svg",
     "rating": 4.8,
     "difficulty": "Beginner-Friendly",
-    "badge": "Fast"
+    "badge": {
+      "text": "Fast",
+      "textColor": "text-purple-600",
+      "bgColor": "bg-purple-100"
+    }
   }
 ]

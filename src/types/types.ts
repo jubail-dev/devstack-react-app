@@ -6,5 +6,9 @@ export interface TechnologiesType {
     icon: string,
     rating: number,
     difficulty: string,
-    badge: string
+    badge?: {
+        text: string,
+        textColor: string,
+        bgColor: string
+    }
 }
